@@ -1,12 +1,4 @@
-# Q.1) Write a Python program to print all even numbers from a given list of numbers in the same order. Stop printing if any number that comes after 237 in the sequence is encountered.
-# Sample
-# numbers list :
-# numbers = [ 386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345, 399, 162, 758, 219, 237, 412, 566, 731, 210, 912, 216, 244, 896, 101, 867, 355, 430 ]
-# expected output:
-# 386 462 418 344 236 566 978 328 162 758
-
-
-
+#que1
 numbers = [ 386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345, 399, 162, 758, 219, 237, 412, 566, 731, 210, 912, 216, 244, 896, 101, 867, 355, 430 ]
 for i in numbers:
     if i%2==0:
@@ -15,40 +7,25 @@ for i in numbers:
         break
 print(end=" ")
 
-
-# Q.2) Write a python program to get the path and name of the file that is currently executing
-
+#que2
 import os
-
 file_path=os.path.abspath(__file__)
 file_name=os.path.basename(__file__)
 print(file_path)
 print(file_name)
 
-
-# Q.3) pattern
-# 1
-# 212
-# 32123
-# 4321234
-# 543212345
-
+#que3
 n = 5
-
 for i in range(1, n+1):
     for j in range(i, 0, -1):
         print(j, end="")
     for j in range(2, i+1):
         print(j, end="")
-
     print()
 
-
-#Q.4) Write a code to accept a number & print its digits in words .
+#que4
 num = int(input("Enter a number: "))
-
 words = ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"]
-
 while num > 0:
     digit = num % 10
     print(words[digit])
