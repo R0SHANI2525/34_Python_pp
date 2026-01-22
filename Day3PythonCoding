@@ -1,0 +1,10 @@
+#Q.2) Write a code to catch an Exception in python?
+try:
+  if(10/0):
+    pass # Or some other code
+except ZeroDivisionError as e:
+  print(e)
+
+
+output:
+division by zero
