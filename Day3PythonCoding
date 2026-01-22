@@ -5,6 +5,21 @@ try:
 except ZeroDivisionError as e:
   print(e)
 
-
 output:
 division by zero
+
+
+
+#Q.1) Write a code to Read a file and append lines to a list.
+lines_list = []
+with open("Day1Coding.py", "r") as file:
+    for line in file:
+        lines_list.append(line.strip())
+
+print(lines_list)
+
+
+output:
+['#que1:', 'firstname=input()', 'lastname=input()', 'print(lastname,"",firstname)', '', '', '#que2:', 'import calendar', 'print(calendar.month(2026,1))', '', '# que3:', 'from datetime import datetime', 'd1=datetime(2014, 7, 2)', 'd2=datetime(2014, 7, 11)', 'difference=d2-d1', 'print(difference)', '', '', '#que4:check vowel or not', 'vowel=("a","e","i","o","u","A","E","I","O","U")', 'letter=input("enter letter")', 'if letter in vowel:', 'print("vowel",letter)', 'else:', 'print("no vowel")', '', '', '', '', '', '']
+
+
